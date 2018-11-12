@@ -6,7 +6,7 @@ each resource has URI
 Social Media App
 
 Users->Post
-retrieve all users-GET/users
+-retrieve all users-GET/users
 -Create a User - POST/users
 -Retrieve one User -GET/users/{id}=?user/1
 
@@ -17,7 +17,7 @@ retrieve all users-GET/users
 retrieve all posts
 create a post
 
-+
+
 
  -for save of links into response
-swagger 2
+and swagger 2 support
