@@ -4,15 +4,14 @@ import com.example.users.userportal.domain.dto.BookDto;
 import com.example.users.userportal.domain.BookEntity;
 
 
-
 public class BookConverter {
     public static BookEntity dtoToEntity(BookDto bookDto) {
 
         BookEntity bookEntity = new BookEntity(bookDto.getName(),
-                                              null);
+                null);
         bookEntity.setId(bookDto.getBookId());
 
-        return bookEntity ;
+        return bookEntity;
 
     }
 

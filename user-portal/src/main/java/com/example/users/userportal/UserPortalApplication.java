@@ -10,10 +10,10 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 @SpringBootApplication
 public class UserPortalApplication {
 
-	@Autowired
-	UserRepository userRepository;
+    @Autowired
+    UserRepository userRepository;
 
-	public static void main(String[] args) {
-		SpringApplication.run(UserPortalApplication.class, args);
-	}
+    public static void main(String[] args) {
+        SpringApplication.run(UserPortalApplication.class, args);
+    }
 }

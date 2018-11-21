@@ -1,5 +1,6 @@
 package com.example.users.userportal.service;
 
+import com.example.users.userportal.domain.UserEntity;
 import com.example.users.userportal.domain.dto.UserDto;
 
 import java.util.List;
@@ -13,7 +14,7 @@ import java.util.List;
 //@Service
 public interface UserService {
 
-   /* UserEntity create(UserEntity user);
+    UserEntity create(UserEntity user);
 
     UserEntity delete(Long id);
 
@@ -21,8 +22,9 @@ public interface UserService {
 
     UserEntity findById(Long id);
 
-    UserEntity update(UserEntity user);*/
-   UserDto getUserById(Long userId);
+    UserEntity update(UserEntity user);
+
+    UserDto getUserById(Long userId);
 
     void saveUser(UserDto userDto);
 

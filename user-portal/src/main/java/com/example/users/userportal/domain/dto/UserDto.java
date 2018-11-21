@@ -10,7 +10,7 @@ public class UserDto {
     String firstName;
     String lastName;
     String email;
-    List<BookDto> bookDtos= new ArrayList<>();
+    List<BookDto> bookDtos = new ArrayList<>();
 
     public UserDto(Long userId, String firstName, String lastName, String email, List<BookDto> bookDtos) {
         this.userId = userId;

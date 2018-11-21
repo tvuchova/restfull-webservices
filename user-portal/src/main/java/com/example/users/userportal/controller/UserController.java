@@ -1,6 +1,7 @@
 package com.example.users.userportal.controller;
 
 
+import com.example.users.userportal.domain.UserEntity;
 import com.example.users.userportal.domain.dto.UserDto;
 import com.example.users.userportal.service.UserService;
 import com.example.users.userportal.utils.Constants;
@@ -28,27 +29,28 @@ public class UserController {
         return userService.getAllUsers();
     }
 
-    @RequestMapping(value= Constants.SAVE_USER, method= RequestMethod.POST)
+    @RequestMapping(value = Constants.SAVE_USER, method = RequestMethod.POST)
     public void saveUser(@RequestBody UserDto userDto) {
         userService.saveUser(userDto);
     }
-    /*@GetMapping("/users")
+
+    @GetMapping("/users")
     public List<UserEntity> getUsers() {
         return userService.findAll();
     }
 
     @GetMapping(path = {"/{id}"})
-    public UserEntity findOne(@PathVariable("id") Long id){
+    public UserEntity findOne(@PathVariable("id") Long id) {
         return userService.findById(id);
     }
 
-    @DeleteMapping(path ={"/{id}"})
+    @DeleteMapping(path = {"/{id}"})
     public UserEntity delete(@PathVariable("id") Long id) {
         return userService.delete(id);
     }
 
     @PutMapping
-    public UserEntity update(@PathVariable("id") Long id, @RequestBody UserEntity user){
+    public UserEntity update(@PathVariable("id") Long id, @RequestBody UserEntity user) {
         user.setId(id);
         return userService.update(user);
     }
@@ -56,6 +58,6 @@ public class UserController {
     @PostMapping
     public UserEntity createUser(@RequestBody UserEntity user) {
         return userService.create(user);
-    }*/
+    }
 
 }

@@ -11,46 +11,48 @@ import java.util.Objects;
 public class BookDto {
 
 
-  // Min, Max,....
-  @Length(max = 10)
-  private Long bookId;
-  private String name;
+    // Min, Max,....
+    @Length(max = 10)
+    private Long bookId;
+    private String name;
 
-  public BookDto(@Length(max = 10) Long bookId, String name) {
-    this.bookId = bookId;
-    this.name = name;
-  }
+    public BookDto(@Length(max = 10) Long bookId, String name) {
+        this.bookId = bookId;
+        this.name = name;
+    }
 
-  public BookDto() {
+    public BookDto() {
 
-  }
+    }
 
-  /**
-   * Construct
-   * @param bookEntity
-   * @return
-   */
-  public static BookDto of(BookEntity bookEntity) {
-    Objects.requireNonNull(bookEntity);
+    /**
+     * Construct
+     *
+     * @param bookEntity
+     * @return
+     */
+    public static BookDto of(BookEntity bookEntity) {
+        Objects.requireNonNull(bookEntity);
 
-    BookDto bookDto = new BookDto();
-    bookDto.setName(bookEntity.getName());
-    return bookDto;
-  }
+        BookDto bookDto = new BookDto();
+        bookDto.setName(bookEntity.getName());
+        return bookDto;
+    }
 
-  public String getName() {
-    return name;
-  }
+    public String getName() {
+        return name;
+    }
 
-  public void setName(String name) {
-    this.name = name;
-  }
-  public Long getBookId() {
-    return bookId;
-  }
+    public void setName(String name) {
+        this.name = name;
+    }
 
-  public void setBookId(Long bookId) {
-    this.bookId = bookId;
-  }
+    public Long getBookId() {
+        return bookId;
+    }
+
+    public void setBookId(Long bookId) {
+        this.bookId = bookId;
+    }
 
 }

@@ -7,6 +7,7 @@ import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Repository;
 
+import java.util.Arrays;
 import java.util.List;
 import java.util.Optional;
 
@@ -17,17 +18,19 @@ import java.util.Optional;
 @Repository
 public interface BookRepository extends JpaRepository<BookEntity, Long> {
 
-  /**
-   * ...
-   */
+    /**
+     * ...
+     */
 
-  Optional<BookEntity> findByName(String name);
+    Optional<BookEntity> findByName(String name);
 
-  /**
-   *
-   * @param name
-   * @return
-   */
-  //@Query("SELECT b FROM BookEntity b WHERE b.name <> :name")
-   // List<BookEntity> searchSomething(@Param("name") String name);
+    Arrays searchSomething(String australlia);
+
+    /**
+     *
+     * @param name
+     * @return
+     */
+    //@Query("SELECT b FROM BookEntity b WHERE b.name <> :name")
+    // List<BookEntity> searchSomething(@Param("name") String name);
 }

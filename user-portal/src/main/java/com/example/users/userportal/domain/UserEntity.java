@@ -15,7 +15,6 @@ public class UserEntity {
     private Long id;
 
 
-
     @Column
     private String firstName;
 
@@ -26,10 +25,8 @@ public class UserEntity {
     private String email;
 
 
-
     @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
-    private List<BookEntity> books= new LinkedList<>();
-
+    private List<BookEntity> books = new LinkedList<>();
 
 
     //user has favorite books
@@ -45,6 +42,7 @@ public class UserEntity {
 
     public UserEntity() {
     }
+
     public UserEntity(String firstName, List<BookEntity> books) {
         this.firstName = firstName;
         this.books = books;
@@ -56,6 +54,7 @@ public class UserEntity {
         this.lastName = lastName;
         this.email = email;
     }
+
     public List<BookEntity> getBooks() {
         return books;
     }
@@ -69,6 +68,7 @@ public class UserEntity {
 
         return id;
     }
+
     public void setId(Long id) {
         this.id = id;
     }
