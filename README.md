@@ -3,7 +3,7 @@ Restfull web service for add,delete,find user and users,using hibernate and h2 d
 
 
 each resource has URI
-Social Media App
+<br>Social Media App
 
 <br>Users->Post
 <br>-retrieve all users-GET/users
