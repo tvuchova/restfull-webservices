@@ -3,21 +3,20 @@ Restfull web service for add,delete,find user and users,using hibernate and h2 d
 
 
 each resource has URI
-Social Media App
+<br>Social Media App
 
-Users->Post
--retrieve all users-GET/users
--Create a User - POST/users
--Retrieve one User -GET/users/{id}=?user/1
+<br>Users->Post
+<br>-retrieve all users-GET/users
+<br>-Create a User - POST/users
+<br>-Retrieve one User -GET/users/{id}=?user/1
 
--Retrieve all posts for a  User - GET/users/{id}/posts
--Create a posts for a User-POST/users/{id}/posts
--Retrieve details of a post-GET/users/{id}/{post_id}
+<br>-Retrieve all posts for a  User - GET/users/{id}/posts
+<br>-Create a posts for a User-POST/users/{id}/posts
+<br>-Retrieve details of a post-GET/users/{id}/{post_id}
 
-retrieve all posts
-create a post
+<br>Into restfull web service we have several services hello world,CRUD for user for retrieve all posts of user,
+creating a post
 
-
-
- -for save of links into response
-and swagger 2 support
+# user-portal
+<br>We have users and books,h2 databes ,swagger 2 support and liquibase .
+<br>TODO the project is still unfinished..
